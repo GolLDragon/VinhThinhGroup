@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Vĩnh Thịnh</string>
+    <string name="title_activity_dia_chi">Map</string>
+    <string name="title_activity_chi_nhanh1">Map</string>
+    <string name="title_activity_chi_nhanh2">Map</string>
+    <string name="title_activity_chi_nhanh3">Map</string>
+    <string name="title_activity_chi_nhanh4">Map</string>
+    <string name="title_activity_chi_nhanh5">Map</string>
+    <string name="title_activity_chi_nhanh6">Map</string>
+</resources>

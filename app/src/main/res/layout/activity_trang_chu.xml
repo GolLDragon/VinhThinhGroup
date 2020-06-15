@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.TrangChu">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlue">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:id="@+id/icon"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorBlue"
+                        android:src="@drawable/vinhthinhlogoslogan"/>
+                </LinearLayout>
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarmanhinhchinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:background="@color/colorBlue"
+                    app:title="Trang chủ"
+                    app:titleTextColor="@color/colorWhite"></androidx.appcompat.widget.Toolbar>
+
+            <ViewFlipper
+                android:background="@color/colorBlue"
+                android:id="@+id/viewflipper"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"></ViewFlipper>
+            <LinearLayout
+                android:background="@drawable/bggioithieu"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"
+                    android:layout_margin="5dp"
+                    android:textSize="25dp"
+                    android:text="Giới thiệu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ScrollView
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_margin="5dp"
+                            android:src="@drawable/gioithieu"
+                            android:layout_width="match_parent"
+                            android:layout_height="180dp" />
+                        <TextView
+                            android:layout_marginTop="10dp"
+                            android:text=" Ngày 15/08/1996, Công ty TNHH Dây Cáp Điện VĨNH THỊNH chính thức được thành lập. Qua hơn 22 năm trưởng thành và phát triển. VĨNH THỊNH đã ngày càng khẳng định vị thế thương hiệu là một trong những công ty có tầm về lĩnh vực sản xuất các loại dây và cáp điện trong cả nước, cũng như liên tục mở rộng sự phát triển của thương hiệu đến với những thị trường mới trên thế giới."
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text=" Sản phẩm dây và cáp điện VĨNH THỊNH đã trở thành một phần không thể thiếu và góp phần quan trọng trong công cuộc xã hội hóa, phát triển đất nước. VĨNH THỊNH ngày càng nhận được sự tin tưởng và tình cảm từ người tiêu dùng trong và ngoài nước."
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text=" Chìa khoá của sự an toàn chính là điều quan trọng bậc nhất khi nói đến chất lượng và kỹ thuật của ngành điện. Hiểu được điều đó, VĨNH THỊNH – hoạt động với cam kết : “Chất Lượng sản phẩm tốt là nền tảng cho sự phát triển”, đem đến “Sự tin cậy và hài lòng cho khách hàng” với phương châm gắn kết “Chia sẻ lợi ích khách hàng, xây dựng cộng đồng”. Điều này được cam kết xuyên suốt trong quá trình trước và sau khi bán hàng."
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:text=" Song song đó, VĨNH THỊNH luôn hướng đến sự phát triển vững bền theo thời gian. Với tầm nhìn toàn cầu, hệ thống chất lượng và dịch vụ khách hàng chuyên nghiệp, VĨNH THỊNH tiếp tục thực hiện sứ mệnh “Nguồn dẫn đến thành công” cùng hợp tác, chia sẻ với các đối tác toàn diện cũng như các đại lý trực thuộc hệ thống Công ty dây và cáp điện VĨNH THỊNHtrên toàn quốc."
+                            android:layout_marginLeft="5dp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+        </LinearLayout>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationview"
+            android:layout_gravity="start"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@color/colorBlue">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/icon1"
+                        android:padding="10dp"
+                        android:background="@color/colorBlue"
+                        android:src="@drawable/vinhthinhlogoslogan"/>
+                </LinearLayout>
+                <ListView
+                    android:id="@+id/listviewmanhinhchinh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </ListView>
+            </LinearLayout>
+
+        </com.google.android.material.navigation.NavigationView>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

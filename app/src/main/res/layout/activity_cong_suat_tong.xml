@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CongSuatTong"
+    android:orientation="vertical"
+    android:weightSum="10">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlue"
+            android:src="@drawable/vinhthinhlogoslogan"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        app:title="Công suất"
+        android:background="@color/colorBlue"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbarcongsuatcs"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_gravity="center"
+                android:id="@+id/textviewthongbaocs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đang trống"
+                android:textSize="30sp"/>
+            <ListView
+                android:id="@+id/listviewcongsuatcs"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </ListView>
+        </FrameLayout>
+    </LinearLayout>
+    <ScrollView
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:textColor="@color/colorRed"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chọn số lượng phòng"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Phòng khách :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/edittextslphongkhach"
+                    android:textSize="20sp"
+                    android:text="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Phòng ăn:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/edittextslphongan"
+                    android:textSize="20sp"
+                    android:text="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Phòng ngủ:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/edittextslphongngu"
+                    android:textSize="20sp"
+                    android:text="1"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/colorRed"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Công suất"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Tổng công suất :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewgiatritongcs"
+                    android:textSize="20sp"
+                    android:text="Giá trị"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Tổng công suất phòng khách :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewgiatritongcspk"
+                    android:textSize="20sp"
+                    android:text="Giá trị"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Tổng công suất phòng ăn:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewgiatritongcspa"
+                    android:textSize="20sp"
+                    android:text="Giá trị"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Tổng công suất phòng ngủ:"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewgiatritongcspn"
+                    android:textSize="20sp"
+                    android:text="Giá trị"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:textColor="@color/colorRed"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hướng dẫn"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Cáp chính :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewcapchinh"
+                    android:textSize="20sp"
+                    android:text="Cáp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Cáp phòng khách :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewcapphongkhach"
+                    android:textSize="20sp"
+                    android:text="Cáp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Cáp phòng ăn :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewcapphongan"
+                    android:textSize="20sp"
+                    android:text="Cáp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Cáp phòng ngủ :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewcapphongngu"
+                    android:textSize="20sp"
+                    android:text="Cáp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+                android:textColor="@color/colorRed"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt hàng"/>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Họ tên :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="text"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/edittexthotencs"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="SDT :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/edittextsdtcs"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Ngày đặt :"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:id="@+id/textviewngaydatcs"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/btndathangcs"
+                android:textColor="@color/colorRed"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Đặt hàng"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

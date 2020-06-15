@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlue">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/icon"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlue"
+            android:src="@drawable/vinhthinhlogoslogan"/>
+    </LinearLayout>
+    <androidx.appcompat.widget.Toolbar
+        app:title="Chi nhánh"
+        android:background="@color/colorBlue"
+        app:titleTextColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:id="@+id/toolbardiachi"></androidx.appcompat.widget.Toolbar>
+    <LinearLayout
+        android:background="@drawable/chinhanh"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/diachi"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="Địa chỉ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sdt"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="SĐT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/email"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:textColor="@color/colorWhite"
+                android:text="Email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/chinhanh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chi nhánh khác"/>
+        </LinearLayout>
+        <LinearLayout
+        android:orientation="horizontal"
+        android:background="@color/colorBlue"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activity.DiaChi" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
